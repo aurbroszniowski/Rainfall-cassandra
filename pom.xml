@@ -339,5 +339,13 @@
       <version>3.3.0</version>
       <scope>provided</scope>
     </dependency>
+
+    <dependency>
+      <groupId>com.datastax.cassandra</groupId>
+      <artifactId>cassandra-driver-mapping</artifactId>
+      <version>3.3.0</version>
+      <scope>provided</scope>
+    </dependency>
+
   </dependencies>
 </project>
