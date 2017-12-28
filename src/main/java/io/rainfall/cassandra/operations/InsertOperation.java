@@ -13,7 +13,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
-import static io.rainfall.ehcache.statistics.CassandraResult.SAVE;
+import static io.rainfall.cassandra.statistics.CassandraResult.SAVE;
 
 /**
  * @author Aurelien Broszniowski
@@ -42,7 +42,6 @@ public class InsertOperation<V> implements Operation {
     mapper.save(value);
     long end = statisticsHolder.getTimeInNs();
     statisticsHolder.record(this.name, (end - start), SAVE);
-
   }
 
   @Override

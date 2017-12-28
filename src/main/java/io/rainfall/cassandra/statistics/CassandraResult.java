@@ -1,4 +1,4 @@
-package io.rainfall.ehcache.statistics;
+package io.rainfall.cassandra.statistics;
 
 /**
  * @author Aurelien Broszniowski

@@ -13,7 +13,7 @@ import com.datastax.driver.mapping.Mapper;
 
 public class CassandraOperations {
 
-  public static <K, V> Operation insert(final ObjectGenerator<V> valueGenerator,
+  public static <V> Operation insert(final ObjectGenerator<V> valueGenerator,
                                         final SequenceGenerator sequenceGenerator, final Mapper<V> mapper) {
     return new InsertOperation<V>(valueGenerator, sequenceGenerator, mapper);
   }
