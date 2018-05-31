@@ -23,7 +23,7 @@
   <groupId>io.rainfall</groupId>
   <artifactId>rainfall-cassandra</artifactId>
   <name>Rainfall-cassandra</name>
-z  <version>1.4.5</version>
+  <version>1.4.5</version>
   <packaging>jar</packaging>
 
   <properties>
