@@ -1,5 +1,5 @@
 /*
- * Copyright 2014 Aurélien Broszniowski
+ * Copyright (c) 2014-2019 Aurélien Broszniowski
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,7 +22,9 @@ import io.rainfall.configuration.ReportingConfig;
 import io.rainfall.cassandra.statistics.CassandraResult;
 import io.rainfall.entity.Person;
 import io.rainfall.entity.PersonGenerator;
+import io.rainfall.utils.SystemTest;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import com.datastax.driver.core.Cluster;
 import com.datastax.driver.core.Session;
@@ -39,6 +41,7 @@ import static java.util.concurrent.TimeUnit.MINUTES;
  * @author Aurelien Broszniowski
  */
 
+@Category(SystemTest.class)
 public class CassandraTest {
 
   @Test
